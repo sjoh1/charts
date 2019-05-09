@@ -1,13 +1,23 @@
 apiVersion: v1
 entries:
+  demo:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-05-09T18:05:07.4899695+09:00
+    description: test application
+    digest: 310c38a3a3ca5afe1780bccc15d70ab250600e6bd7d1f73bc0bbc4a3f6349b85
+    name: demo
+    urls:
+    - demo-0.0.1.tgz
+    version: 0.0.1
   echo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-09T16:40:38.8191376+09:00
+    created: 2019-05-09T18:05:07.4899695+09:00
     description: test application
     digest: f2eecc2c30c1703d4713f88a7837bf57dbf6e144d4038e036e66e10cb3fdf31a
     name: echo
     urls:
     - echo-0.0.1.tgz
     version: 0.0.1
-generated: 2019-05-09T16:40:38.818136+09:00
+generated: 2019-05-09T18:05:07.4889335+09:00

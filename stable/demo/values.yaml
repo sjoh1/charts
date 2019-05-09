@@ -1,0 +1,28 @@
+# Default values for demo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 3
+
+nginx:
+  image:
+    repository: gihyodocker/nginx
+    tag: latest
+    backendHost: localhost:8080
+    containerPort: 80
+
+echo:
+  image:
+    repository: gihyodocker/echo
+    tag: latest
+    containerPort: 8080
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  hosts:
+    - host: chart-example.local
+      paths: /
