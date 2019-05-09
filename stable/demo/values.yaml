@@ -24,4 +24,4 @@ service:
 ingress:
   enabled: true
   host: chart-example.local
-  path: /
+  path: "/"
