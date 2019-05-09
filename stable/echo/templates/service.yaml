@@ -8,8 +8,8 @@ spec:
   type: ClusterIP
   ports:
     - port: 80
-        targetPort: http
-        protocol: TCP
-        name: echo
+      targetPort: http
+      protocol: TCP
+      name: echo
   selector:
     app: echo
