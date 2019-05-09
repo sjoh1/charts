@@ -29,11 +29,9 @@ spec:
     - host: {{ .host | quote }}
       http:
         paths:
-        {{- range .paths }}
-          - path: {{ . }}
+          - path: {{ $ingressPath }}
             backend:
               serviceName: {{ $fullName }}
               servicePort: http
-        {{- end }}
   {{- end }}
 {{- end }}
