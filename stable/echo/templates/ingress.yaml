@@ -4,9 +4,9 @@ metadata:
   name: echo
 spec:
   rules:
-  - host: sjoh1-stable.echo.local
-      http:
-        paths:
-        - backend:
-            serviceName: echo
-            servicePort: 80
+    - host: sjoh1-stable.echo.local
+        http:
+          paths:
+            - backend:
+                serviceName: echo
+                servicePort: 80
