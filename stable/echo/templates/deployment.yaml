@@ -1,43 +1,32 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment 
 metadata:
-  name: echo
+  name: echo 
   labels:
-    app: echo
+    app: echo 
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: echo
+      app: echo 
   template: # template 아래는 파드 리소스 정의와 같음
     metadata:
       labels:
         app: echo
     spec:
       containers:
-      - name: nginx
-        image: gihyodocker/nginx:latest
-        imagePullPolicy: Always
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 80
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 80
-        ports:
-        - name: http
-        - containerPort: 80
-        env:
+      - name: nginx 
+        image: gihyodocker/nginx:latest 
+        env: 
         - name: BACKEND_HOST
           value: localhost:8080
-
+        ports:
+        - containerPort: 80 
       - name: echo
-        image: gihyodocker/echo:latest
-        imagePullPolicy: Always
+        image: gihyodocker/echo:patched
+        env: 
+        - name: HOGE 
+          value: fuga 
         ports:
         - containerPort: 8080
-        env:
-        - name: HTTP_PORT
-          value: 8080
+
