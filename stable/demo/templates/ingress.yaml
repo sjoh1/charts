@@ -11,10 +11,10 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   rules:
-  - host: {{ .Values.ingress.hosts.host }}
+  - host: {{ .Values.ingress.host }}
     http:
       paths:
-      - path: {{ .Values.ingress.hosts.paths }}
+      - path: {{ .Values.ingress.hosts.path }}
         backend:
           serviceName: {{ include "demo.fullname" . }}
           servicePort: {{ .Values.service.port }}

@@ -23,6 +23,5 @@ service:
 
 ingress:
   enabled: true
-  hosts:
-    - host: chart-example.local
-      paths: /
+  hosts: chart-example.local
+  paths: /
