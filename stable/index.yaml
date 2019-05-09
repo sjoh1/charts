@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  echo:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-05-09T15:30:36.5841832+09:00
+    description: test application
+    digest: 78bba0ef8b53c4e986ddf57c7255eacbb36a9f1d842ca62382e97f6645b53051
+    name: echo
+    urls:
+    - echo-0.0.1.tgz
+    version: 0.0.1
+generated: 2019-05-09T15:30:36.5831847+09:00
