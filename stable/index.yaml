@@ -3,11 +3,11 @@ entries:
   echo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-09T16:00:07.9888331+09:00
+    created: 2019-05-09T16:24:15.8733864+09:00
     description: test application
-    digest: 9749d93c40b7b044ca66e2fb55027277e16016de5351128537f21af014b60498
+    digest: 3103a454bae5124f8ce428908d4def155f15e1cd238db1f4b050cfb273429b4d
     name: echo
     urls:
     - echo-0.0.1.tgz
     version: 0.0.1
-generated: 2019-05-09T16:00:07.9878473+09:00
+generated: 2019-05-09T16:24:15.8726285+09:00
