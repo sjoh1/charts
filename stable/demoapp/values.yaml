@@ -24,4 +24,4 @@ service:
 ingress:
   enabled: true
   host: sjoh1-demoapp.local
-  path: "/"
+  path: "/hello"
