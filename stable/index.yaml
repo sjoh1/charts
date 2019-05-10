@@ -3,21 +3,31 @@ entries:
   demo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-09T18:58:13.5363211+09:00
+    created: 2019-05-10T10:22:01.1181182+09:00
     description: test application
     digest: b9e76eafbab051c17211c5fb51c1705a009898bf7b64c523ed7231a18c012800
     name: demo
     urls:
     - demo-0.0.1.tgz
     version: 0.0.1
+  demoapp:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-05-10T10:22:01.1181182+09:00
+    description: jar test application
+    digest: 751025f397455b029d6f7ae6dc0c2f8b0f34517ce892424bc3a182fdeb9fabe2
+    name: demoapp
+    urls:
+    - demoapp-0.0.1.tgz
+    version: 0.0.1
   echo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-09T18:58:13.5363211+09:00
+    created: 2019-05-10T10:22:01.1231229+09:00
     description: test application
     digest: f2eecc2c30c1703d4713f88a7837bf57dbf6e144d4038e036e66e10cb3fdf31a
     name: echo
     urls:
     - echo-0.0.1.tgz
     version: 0.0.1
-generated: 2019-05-09T18:58:13.5353436+09:00
+generated: 2019-05-10T10:22:01.1131185+09:00
