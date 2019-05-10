@@ -28,6 +28,6 @@ spec:
         ports:
         - containerPort: {{ .Values.nginx.image.containerPort }}
       - name: demoapp
-        image: {{ .Values.demoapp.image.repository }}:{{ .Values.echo.image.tag }}
+        image: {{ .Values.demoapp.image.repository }}:{{ .Values.demoapp.image.tag }}
         ports:
         - containerPort: {{ .Values.echo.image.containerPort }}

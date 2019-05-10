@@ -10,7 +10,7 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app.kubernetes.io/name: {{ include "demo.name" . }}
+    app.kubernetes.io/name: {{ include "demoapp.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
   ports:
     - name: http
