@@ -30,4 +30,4 @@ spec:
       - name: demoapp
         image: {{ .Values.demoapp.image.repository }}:{{ .Values.demoapp.image.tag }}
         ports:
-        - containerPort: {{ .Values.echo.image.containerPort }}
+        - containerPort: {{ .Values.demoapp.image.containerPort }}
