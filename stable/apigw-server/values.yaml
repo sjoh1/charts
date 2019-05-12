@@ -11,7 +11,7 @@ nginx:
     backendHost: localhost:8080
     containerPort: 80
 
-apigw-server:
+app:
   image:
     repository: sjoh1/apigw-server
     tag: 0.0.1
