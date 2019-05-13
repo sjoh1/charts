@@ -3,7 +3,7 @@ entries:
   apigw-server:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-13T16:41:32.6410488+09:00
+    created: 2019-05-13T16:57:08.7967165+09:00
     description: apigw-server test application
     digest: c616119a5105b0223f65c7ce735c03c1c4173e7932fd8e12c66e735d5d0730ca
     name: apigw-server
@@ -13,7 +13,7 @@ entries:
   apigw-server-sjoh:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-13T16:41:32.6420487+09:00
+    created: 2019-05-13T16:57:08.7967165+09:00
     description: apigw-server-sjoh test application
     digest: 07ccd02b3c2b3ff42d2a415b886347363bfa43a035f7215e33ef876f0083bb62
     name: apigw-server-sjoh
@@ -23,7 +23,7 @@ entries:
   demo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-13T16:41:32.6430149+09:00
+    created: 2019-05-13T16:57:08.7977159+09:00
     description: test application
     digest: b9e76eafbab051c17211c5fb51c1705a009898bf7b64c523ed7231a18c012800
     name: demo
@@ -33,7 +33,7 @@ entries:
   demoapp:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-13T16:41:32.6450171+09:00
+    created: 2019-05-13T16:57:08.7997202+09:00
     description: jar test application
     digest: 6ece3e1237288f05c0f0e2660bffecc587ca6da08deaebaef3709ff45a73fee6
     name: demoapp
@@ -43,7 +43,7 @@ entries:
   echo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-13T16:41:32.6460188+09:00
+    created: 2019-05-13T16:57:08.8007155+09:00
     description: test application
     digest: f2eecc2c30c1703d4713f88a7837bf57dbf6e144d4038e036e66e10cb3fdf31a
     name: echo
@@ -53,11 +53,11 @@ entries:
   test:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-13T16:41:32.6460188+09:00
+    created: 2019-05-13T16:57:08.8007155+09:00
     description: test application
-    digest: b961bfcffd54250f42dd0c8d9d162982df15e7598d07a178e0b05eecbb68534a
+    digest: a48badc5d17ea12d3f8bceca12acecac52c4c32176a5a7800c5859001675c905
     name: test
     urls:
     - test-0.0.1.tgz
     version: 0.0.1
-generated: 2019-05-13T16:41:32.6400187+09:00
+generated: 2019-05-13T16:57:08.7947149+09:00
