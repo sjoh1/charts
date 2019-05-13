@@ -8,7 +8,7 @@ nginx:
   image:
     repository: gihyodocker/nginx
     tag: latest
-    backendHost: 127.0.0.1:8080
+    backendHost: 192.168.42.11:8080
     containerPort: 80
 
 demoapp:
