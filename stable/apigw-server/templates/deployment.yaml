@@ -28,6 +28,6 @@ spec:
         ports:
         - containerPort: {{ .Values.nginx.image.containerPort }}
       - name: apigw-server
-        image: {{ .Values.app.image.repository }}:{{ .Values.app.image.tag }}
+        image: {{ .Values.apigw_server.image.repository }}:{{ .Values.apigw_server.image.tag }}
         ports:
-        - containerPort: {{ .Values.app.image.containerPort }}
+        - containerPort: {{ .Values.apigw_server.image.containerPort }}
