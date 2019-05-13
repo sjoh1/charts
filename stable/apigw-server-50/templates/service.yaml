@@ -1,16 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "apigw-server.fullname" . }}
+  name: {{ include "apigw-server-50.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "apigw-server.name" . }}
-    helm.sh/chart: {{ include "apigw-server.chart" . }}
+    app.kubernetes.io/name: {{ include "apigw-server-50.name" . }}
+    helm.sh/chart: {{ include "apigw-server-50.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app.kubernetes.io/name: {{ include "apigw-server.name" . }}
+    app.kubernetes.io/name: {{ include "apigw-server-50.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
   ports:
     - name: http

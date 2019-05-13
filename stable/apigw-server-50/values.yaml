@@ -11,7 +11,7 @@ nginx:
     backendHost: localhost:8080
     containerPort: 80
 
-apigw_server:
+apigw_server_50:
   image:
     repository: sjoh1/apigw-server
     tag: 0.0.1
@@ -23,5 +23,5 @@ service:
 
 ingress:
   enabled: true
-  host: sjoh1.apigw-server
+  host: sjoh1.apigw-server-50
   path: "/"

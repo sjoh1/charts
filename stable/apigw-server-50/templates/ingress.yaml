@@ -1,12 +1,12 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "apigw-server.fullname" . -}}
+{{- $fullName := include "apigw-server-50.fullname" . -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app.kubernetes.io/name: {{ include "apigw-server.name" . }}
-    helm.sh/chart: {{ include "apigw-server.chart" . }}
+    app.kubernetes.io/name: {{ include "apigw-server-50.name" . }}
+    helm.sh/chart: {{ include "apigw-server-50.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
@@ -16,6 +16,6 @@ spec:
       paths:
       - path: {{ .Values.ingress.path }}
         backend:
-          serviceName: {{ include "apigw-server.fullname" . }}
+          serviceName: {{ include "apigw-server-50.fullname" . }}
           servicePort: {{ .Values.service.port }}
 {{- end }}
