@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "apigw-server-50.fullname" . }}
+  name: {{ include "apigw-server.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "apigw-server-50.name" . }}
-    helm.sh/chart: {{ include "apigw-server-50.chart" . }}
+    app.kubernetes.io/name: {{ include "apigw-server.name" . }}
+    helm.sh/chart: {{ include "apigw-server.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ include "apigw-server-50.name" . }}
+      app.kubernetes.io/name: {{ include "apigw-server.name" . }}
       app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: {{ include "apigw-server-50.name" . }}
+        app.kubernetes.io/name: {{ include "apigw-server.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       containers:
@@ -27,7 +27,7 @@ spec:
           value: {{ .Values.nginx.image.backendHost }}
         ports:
         - containerPort: {{ .Values.nginx.image.containerPort }}
-      - name: apigw_server_50
-        image: {{ .Values.apigw_server_50.image.repository }}:{{ .Values.apigw_server_50.image.tag }}
+      - name: apigw-server
+        image: {{ .Values.apigw_server.image.repository }}:{{ .Values.apigw_server.image.tag }}
         ports:
-        - containerPort: {{ .Values.apigw_server_50.image.containerPort }}
+        - containerPort: {{ .Values.apigw_server.image.containerPort }}
