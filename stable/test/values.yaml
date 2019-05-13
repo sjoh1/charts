@@ -1,0 +1,27 @@
+# Default values for demo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 3
+
+nginx:
+  image:
+    repository: gihyodocker/nginx
+    tag: latest
+    backendHost: 127.0.0.1:8080
+    containerPort: 80
+
+demoapp:
+  image:
+    repository: sjoh1/demoapp
+    tag: 0.0.1
+    containerPort: 8080
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  host: 127.0.0.1
+  path: "/hello"
