@@ -6,7 +6,7 @@ replicaCount: 3
 
 nginx:
   image:
-    repository: nginx/nginx-ingress
+    repository: bitnami/nginx
     tag: latest
     backendHost: localhost:8080
     containerPort: 80
