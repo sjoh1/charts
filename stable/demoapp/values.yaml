@@ -22,5 +22,5 @@ service:
 
 ingress:
   enabled: true
-  host: sjoh1-demoapp.local
+  host: demoapp.test
   path: "/"
