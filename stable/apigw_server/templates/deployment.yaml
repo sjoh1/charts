@@ -24,7 +24,7 @@ spec:
         image: {{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}
         ports:
         - containerPort: {{ .Values.nginx.image.containerPort }}
-      - name: demoapp
-        image: {{ .Values.demoapp.image.repository }}:{{ .Values.demoapp.image.tag }}
+      - name: apigw_server
+        image: {{ .Values.apigw_server.image.repository }}:{{ .Values.apigw_server.image.tag }}
         ports:
-        - containerPort: {{ .Values.demoapp.image.containerPort }}
+        - containerPort: {{ .Values.apigw_server.image.containerPort }}

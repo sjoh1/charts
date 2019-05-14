@@ -10,9 +10,9 @@ nginx:
     tag: stable
     containerPort: 80
 
-demoapp:
+apigw_server:
   image:
-    repository: sjoh1/demoapp
+    repository: sjoh/apigw_server
     tag: 0.0.1
     containerPort: 8080
 
@@ -22,5 +22,5 @@ service:
 
 ingress:
   enabled: true
-  host: apigw_server.test
+  host: apigw-server.test
   path: "/"
