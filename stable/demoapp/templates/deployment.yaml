@@ -22,9 +22,6 @@ spec:
       containers:
       - name: nginx
         image: {{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}
-        env:
-        - name: BACKEND_HOST
-          value: {{ .Values.nginx.image.backendHost }}
         ports:
         - containerPort: {{ .Values.nginx.image.containerPort }}
       - name: demoapp

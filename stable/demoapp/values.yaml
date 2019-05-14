@@ -8,7 +8,6 @@ nginx:
   image:
     repository: nginx/nginx-ingress
     tag: latest
-    backendHost: localhost:8080
     containerPort: 80
 
 demoapp:
