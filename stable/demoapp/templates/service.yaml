@@ -15,3 +15,5 @@ spec:
   ports:
     - name: http
       port: {{ .Values.service.port }}
+      protocol: TCP
+      targetPort: 8080
