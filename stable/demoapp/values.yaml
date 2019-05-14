@@ -6,8 +6,8 @@ replicaCount: 3
 
 nginx:
   image:
-    repository: gihyodocker/nginx
-    tag: latest
+    repository: nginx
+    tag: stable
     backendHost: localhost:8080
     containerPort: 80
 
