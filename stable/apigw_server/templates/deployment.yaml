@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "apigw_server.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "apigw_server.name" . }}
+    helm.sh/chart: {{ include "apigw_server.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "apigw_server.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: {{ include "apigw_server.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: nginx
+        image: {{ .Values.nginx.image.repository }}:{{ .Values.nginx.image.tag }}
+        ports:
+        - containerPort: {{ .Values.nginx.image.containerPort }}
+      - name: demoapp
+        image: {{ .Values.demoapp.image.repository }}:{{ .Values.demoapp.image.tag }}
+        ports:
+        - containerPort: {{ .Values.demoapp.image.containerPort }}
