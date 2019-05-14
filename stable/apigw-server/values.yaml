@@ -12,7 +12,7 @@ nginx:
 
 application:
   image:
-    repository: sjoh/apigw-server
+    repository: test/apigw-server
     tag: 0.0.1
     containerPort: 8080
 
