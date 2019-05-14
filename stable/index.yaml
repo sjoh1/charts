@@ -3,9 +3,9 @@ entries:
   apigw-server:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-14T13:27:53.541733+09:00
+    created: 2019-05-14T13:35:12.763298+09:00
     description: apigw-server application
-    digest: 686fed687fed8e3b320663e319c9d389f78c3863957028d6c15c5add1847927d
+    digest: ea1333a5310f668fb76c2b863893cf97a3d9b0524db55dad9fc2b1c7bfa4a6ef
     name: apigw-server
     urls:
     - apigw-server-0.0.1.tgz
@@ -13,7 +13,7 @@ entries:
   demo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-14T13:27:53.541733+09:00
+    created: 2019-05-14T13:35:12.763298+09:00
     description: test application
     digest: b9e76eafbab051c17211c5fb51c1705a009898bf7b64c523ed7231a18c012800
     name: demo
@@ -23,7 +23,7 @@ entries:
   demoapp:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-14T13:27:53.5427339+09:00
+    created: 2019-05-14T13:35:12.7643083+09:00
     description: jar test application
     digest: 5269560f8180a6e395c9b665f556a8ee67b02c2e50d2ba3962f0f06b292dbaf0
     name: demoapp
@@ -33,7 +33,7 @@ entries:
   echo:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-14T13:27:53.5427339+09:00
+    created: 2019-05-14T13:35:12.7643083+09:00
     description: test application
     digest: f2eecc2c30c1703d4713f88a7837bf57dbf6e144d4038e036e66e10cb3fdf31a
     name: echo
@@ -43,11 +43,11 @@ entries:
   test:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-05-14T13:27:53.5427339+09:00
+    created: 2019-05-14T13:35:12.7652977+09:00
     description: test application
     digest: 5494afebe2f2c7bc490a1255bd7cd40aca3d5dcc425ca204681c47e848b0244d
     name: test
     urls:
     - test-0.0.1.tgz
     version: 0.0.1
-generated: 2019-05-14T13:27:53.5407567+09:00
+generated: 2019-05-14T13:35:12.7622951+09:00
