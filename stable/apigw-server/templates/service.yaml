@@ -9,11 +9,11 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   type: {{ .Values.service.type }}
+  selector:
+    app.kubernetes.io/name: {{ include "apigw-server.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
   ports:
     - name: http
       port: {{ .Values.service.port }}
       protocol: TCP
       targetPort: 8080
-  selector:
-    app.kubernetes.io/name: {{ include "apigw-server.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
