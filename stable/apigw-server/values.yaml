@@ -1,0 +1,26 @@
+# Default values for demo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 2
+
+nginx:
+  image:
+    repository: nginx
+    tag: stable
+    containerPort: 80
+
+apigw_server:
+  image:
+    repository: sjoh/apigw_server
+    tag: 0.0.1
+    containerPort: 8080
+
+service:
+  type: NodePort
+  port: 80
+
+ingress:
+  enabled: true
+  host: apigw-server
+  path: "/"
