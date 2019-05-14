@@ -22,5 +22,5 @@ service:
 
 ingress:
   enabled: true
-  host: apigw-server.test
+  host: apigw.server
   path: "/"
