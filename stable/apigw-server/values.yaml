@@ -13,7 +13,7 @@ nginx:
 application:
   image:
     repository: test/apigw-server
-    tag: 0.0.1
+    tag: latest
     containerPort: 8080
 
 service:
