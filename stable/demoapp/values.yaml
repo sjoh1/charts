@@ -6,8 +6,8 @@ replicaCount: 3
 
 nginx:
   image:
-    repository: nginx/nginx-ingress
-    tag: latest
+    repository: nginx
+    tag: stable
     containerPort: 80
 
 demoapp:
@@ -23,4 +23,4 @@ service:
 ingress:
   enabled: true
   host: sjoh1-demoapp.local
-  path: "/hello"
+  path: "/"
